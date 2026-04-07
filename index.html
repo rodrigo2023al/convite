@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Um pequeno segredo...</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Fundo degradê profundo e elegante */
+            background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        
+        /* Container que se adapta ao celular */
+        .container {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 2rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            width: 90%;
+            max-width: 400px; /* Largura ideal para iPhones e Androids */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #ff4d6d;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+            font-weight: 300;
+        }
+
+        strong {
+            color: #ff4d6d;
+            font-weight: 600;
+        }
+
+        /* Botão Estilo Instagram Responsivo */
+        .btn-insta {
+            display: block;
+            width: 100%;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px rgba(188, 24, 136, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-insta:active {
+            transform: scale(0.96);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: #ff4d6d;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ajustes extras para telas muito pequenas */
+        @media (max-height: 600px) {
+            .container { padding: 1.5rem; }
+            h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+            p { font-size: 1rem; margin-bottom: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Oi, Raíssa! 🌹</h1>
+        
+        <p>
+            Nesses nossos poucos minutos de conversa, já achei você uma pessoa <strong>muito interessante</strong>.
+        </p>
+        
+        <p>
+            Gostaria de te conhecer melhor fora da correria da escola. Que tal a gente se seguir por aqui?
+        </p>
+        
+        <a href="https://www.instagram.com/rodrigo2011al/" target="_blank" class="btn-insta">
+            Seguir @rodrigo2011al
+        </a>
+
+        <div class="footer">
+            "Você sabe guardar segredo..." 😉
+        </div>
+    </div>
+
+</body>
+</html>
